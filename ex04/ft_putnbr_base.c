@@ -6,7 +6,7 @@
 /*   By: rcollas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 15:19:46 by rcollas           #+#    #+#             */
-/*   Updated: 2021/03/23 10:34:44 by rcollas          ###   ########.fr       */
+/*   Updated: 2021/03/23 14:44:25 by rcollas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ void	ft_putnbr_base(int nbr, char *base)
 		write(1, "-", 1);
 		num *= -1;
 	}
-	if (num > len)
+	if (num >= len)
 		ft_putnbr_base(num / len, base);
 	num = num % len;
 	to_print = base[num];
